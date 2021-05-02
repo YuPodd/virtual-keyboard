@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Virtual-Keyboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <link rel="shortcut icon" href="assets/favicon.ico">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <textarea class="keyboard-input" placeholder="Click here"></textarea>
+  <button class="show-hide-keyboard">Show/hide keyboard</button>
+  <div class="keyboard">
+
+    <div class="keyboard-container">
+      <div class="row row-1">
+      </div>
+      <div class="row row-2">
+      </div>
+      <div class="row row-3">
+      </div>
+      <div class="row row-4">
+      </div>
+      <div class="row row-5">
+      </div>
+    </div>
+  </div>
+  <audio data-key="keyboard-key" src="assets/sound_button.mp3"></audio>
+  <audio data-key="Enter" src="assets/enter_sound.mp3"></audio>
+  <audio data-key="Backspace" src="assets/backspace_sound.mp3"></audio>
+  <audio data-key="CapsLk" src="assets/capslock_sound.mp3"></audio>
+  <audio data-key="Shift" src="assets/shift_sound.mp3"></audio>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,163 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: linen;
+  
+}
+textarea{
+ /* background-image: url(assets/pexels-simon-matzinger-1323550.jpg);
+  opacity: 0.8;
+  background-size: cover;
+  COLOR: WHITE;
+  border: none;
+  border-radius: 5px;
+  text-shadow: 2px 2px 5px black;
+  font-size: 25px;
+  outline: none;*/
+
+/* *new* */
+background-image: url(assets/pexels-simon-matzinger-1323550.jpg);
+  opacity: 0.8;
+  background-size: cover;
+  COLOR: WHITE;
+  border: none;
+  border-radius: 5px;
+  text-shadow: 2px 2px 5px black;
+  
+  outline: none;
+display: flex;
+width: 100%;
+}
+::placeholder {
+  color: white;
+  font-size: 20px;
+  opacity: 1; /* Firefox */
+}
+.keyboard-input {
+  display: block;
+  /* *new * */
+  /*width: 90%;*/
+ 
+  /*margin: 30px auto;*/
+  padding: 10px;
+  font-size: 28px;
+  height: calc(100vh - 380px);
+  min-height: 300px;
+}
+
+.keyboard {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 5px 0;
+  background:linear-gradient(to right, rgba(205,0,0,0.2), rgb(247 250 28 / 84%));
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+  user-select: none;
+  transition: bottom 0.4s;
+  height: 300px;
+}
+.keyboard-display{
+display: block;
+}
+.keyboard-hide{
+  display: none;
+}
+.keyboard-hidden {
+  bottom: -100%;
+}
+.keyboard-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 3%;
+  margin-bottom: 2%;
+}
+.row{
+  display: inline-flex;
+  justify-content: center;
+  width: 100%;
+}
+.keyboard-key {
+ width: 25%;
+  height: 40px;
+  max-width: 90px;
+ /* padding: 3% 7%;
+  display: inline-flex;
+    justify-content: center;
+    align-items: center;*/
+    background-color: seashell;
+    margin: 2px;
+    font-family: 'Syne Mono', monospace;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 3px;
+    outline: none;
+    position: relative;
+}
+.keyboard-key:hover{
+  background-color: white;
+  box-shadow: 0 0 6px violet;
+}
+.keyboard-key:active{
+  background-color: rgb(173, 190, 247);
+  box-shadow: 0 0 6px violet;
+
+}
+
+.key-long{
+  width: 40%;
+  max-width: 120px;
+  
+}
+.key-extra-long{
+ width: 60%;
+ max-width: 500px;
+ 
+}
+.key-activatable::after{
+content: '';
+position: absolute;
+top: 2px;
+right: 5px;
+width: 8px;
+height: 8px;
+border-radius: 50%;
+background-color:#878A87 ;
+}
+
+.key-active::after{
+  content: '';
+position: absolute;
+top: 2px;
+right: 5px;
+width: 8px;
+height: 8px;
+border-radius: 50%;
+  background-color:#14BF07;
+}
+.show-hide-keyboard{
+  width: 15%;
+  min-width: 77px;
+  height: 20%;
+  background-color: rgba(255,216,0,0.2);
+  margin: 2px;
+  font-family: 'Syne Mono', monospace;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 3px;
+  outline: none;
+  border: 0.5px solid rgba(205,0,0,0.2);
+  color: brown;
+}
+.pressed{
+  background-color: rgba(247, 157, 54, 0.952);
+}
+.unpressed{
+  background-color: seashell;
+}
